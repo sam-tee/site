@@ -15,6 +15,7 @@ html[data-theme="light"]{--bg:#f0f0f0;--border:#d4d4d4;--muted:#545454;--fg:#2b2
 header{background:var(--bg);position:sticky;top:0;z-index:10;border-bottom:1px solid transparent}
 header.scrolled{border-bottom-color:var(--border)}
 .hd{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem 0;flex-wrap:wrap}
+@media(max-width:640px){.wrap{padding:0 1.5rem}}
 .hd>*{min-width:0}
 nav{display:flex;gap:.45rem;align-items:center;flex-wrap:wrap;justify-content:flex-end}
 .brand{font-family:var(--f-sans);font-weight:800;font-size:1rem;color:var(--fg-bright);text-decoration:none}

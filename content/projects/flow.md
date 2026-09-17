@@ -2,7 +2,7 @@
 title = "Where orderly flow becomes turbulence"
 description = "Research review · Fluid dynamics."
 weight = 1
-template = "project.html"
+template = "prose.html"
 +++
 
 *Research review · Fluid dynamics.*

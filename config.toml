@@ -6,5 +6,5 @@ description = "MSci Physics, Cambridge. Computational physics, Python, tutoring.
 name = "Sam Larcombe Tee"
 email = "sl2110@cam.ac.uk"
 git_url = "https://git.akhlus.uk"
+source_url = "https://git.akhlus.uk/sam-tee/site"
 author = "Sam Larcombe Tee"
-variant = "Minimal Masthead"

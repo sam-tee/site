@@ -2,7 +2,7 @@
 title = "Encoding many spins, considering every bit"
 description = "Computing project · Statistical physics."
 weight = 2
-template = "project.html"
+template = "prose.html"
 +++
 
 *Computing project · Statistical physics.*

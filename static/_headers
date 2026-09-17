@@ -1,3 +1,18 @@
+# Global security + caching headers for the whole static site.
+# (Cloudflare Pages applies these per request; most-specific path wins.)
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Cross-Origin-Opener-Policy: same-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  # All CSS/JS is same-origin (style.css, theme.js) — no inline code remains,
+  # so 'unsafe-inline' is not needed. No forms, embeds, or network requests.
+  # MAINTENANCE: if fetch/XHR, forms, or external media are ever added,
+  # relax connect-src / form-action / img-src accordingly — they will fail
+  # silently (blocked requests, console violations) otherwise.
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'
+
 # Force the CV to download (with a proper filename) instead of opening in-browser.
 /cv.pdf
   Content-Disposition: attachment; filename="Sam-Larcombe-Tee-CV.pdf"

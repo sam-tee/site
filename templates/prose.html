@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }} - {{ config.extra.name }}{% endblock %}
+{% block ogtitle %}{{ page.title }} - {{ config.extra.name }}{% endblock %}
+{% block twittertitle %}{{ page.title }} - {{ config.extra.name }}{% endblock %}
+{% block content %}
+<div class="pagehead">
+<h1 class="title">{{ page.title }}</h1>
+{% if page.description %}<p class="lede">{{ page.description }}</p>{% endif %}
+</div>
+<div class="prose">{{ page.content | safe }}</div>
+{% endblock %}

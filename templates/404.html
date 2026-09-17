@@ -1,8 +1,17 @@
 {% extends "base.html" %}
 {% block title %}Not found - {{ config.extra.name }}{% endblock %}
+{% block ogtitle %}Not found - {{ config.extra.name }}{% endblock %}
+{% block twittertitle %}Not found - {{ config.extra.name }}{% endblock %}
+{% block bodyclass %} class="error404"{% endblock %}
+{% block robots %}<meta name="robots" content="noindex, follow">{% endblock %}
+{% block canonical %}{% endblock %}
+{% block ogurl %}{% endblock %}
+{% block endrule %}{% endblock %}
 {% block content %}
-<p class="eyebrow">Error 404</p>
-<h1 class="title">Off the map.</h1>
+<div class="notfound"><div>
+<p class="notfound-kicker">Off the map.</p>
+<h1 class="notfound-code">Error 404</h1>
 <p class="lede">That page doesn't exist.</p>
-<p><a href="{{ get_url(path='@/_index.md') }}">← Home</a> · <a href="{{ get_url(path='@/cv.md') }}">CV</a></p>
+<p><a class="notfound-home" href="{{ get_url(path='@/_index.md') }}">← Home</a></p>
+</div></div>
 {% endblock %}

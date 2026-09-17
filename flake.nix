@@ -3,7 +3,7 @@
 
   outputs = { self, nixpkgs }:
     let
-      systems = [ "x86_64-linux" "aarch64-linux" ];
+      systems = [ "x86_64-linux" "aarch64-linux" "aarch64-darwin" ];
       forEachSystem = f: nixpkgs.lib.genAttrs systems (system:
         let pkgs = import nixpkgs { inherit system; }; in f pkgs);
     in {
@@ -11,6 +11,7 @@
         default = pkgs.mkShell {
           packages = with pkgs; [
             zola
+            resvg
             (texlive.combine { inherit (texlive) scheme-small titlesec enumitem parskip; })
           ];
           # NOTE: wrangler deliberately NOT pinned here — its closure is huge

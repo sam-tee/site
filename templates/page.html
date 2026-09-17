@@ -12,7 +12,7 @@
 <p>MSci Physics · University of Cambridge</p>
 <p><a href="mailto:{{ config.extra.email }}">{{ config.extra.email }}</a> · <a href="{{ config.extra.git_url }}">git.akhlus.uk</a></p>
 </div>
-<a class="cv-dl" href="{{ get_url(path='cv.pdf') }}" title="Download CV PDF" aria-label="Download CV PDF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 21h16"/></svg></a>
+<a class="cv-dl" href="{{ get_url(path='cv.pdf') }}" title="Download CV PDF" aria-label="Download CV PDF"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 21h16"/></svg></a>
 </div>
 <div class="prose">{{ page.content | safe }}</div>
 {% endblock %}

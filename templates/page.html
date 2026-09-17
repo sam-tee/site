@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}CV — {{ config.extra.name }}{% endblock %}
+{% block content %}
+<div class="cv-head">
+<!-- To use a real portrait: replace the div below with
+     <img class="photo" src="portrait.jpg" alt="Portrait of Sam Larcombe Tee">
+     and add the file as static/portrait.jpg -->
+<div class="photo" title="Portrait placeholder — replace with static/portrait.jpg">ST</div>
+<div class="who">
+<p class="eyebrow">Curriculum Vitae</p>
+<h1 class="title">Sam Larcombe Tee</h1>
+<p>MSci Physics · University of Cambridge</p>
+<p><a href="mailto:{{ config.extra.email }}">{{ config.extra.email }}</a> · <a href="{{ config.extra.git_url }}">git.akhlus.uk</a></p>
+</div>
+<a class="cv-dl" href="{{ get_url(path='static/cv.pdf') }}" title="Download CV PDF" aria-label="Download CV PDF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 21h16"/></svg></a>
+</div>
+<div class="prose">{{ page.content | safe }}</div>
+{% endblock %}

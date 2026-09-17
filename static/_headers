@@ -1,0 +1,3 @@
+# Force the CV to download (with a proper filename) instead of opening in-browser.
+/cv.pdf
+  Content-Disposition: attachment; filename="Sam-Larcombe-Tee-CV.pdf"

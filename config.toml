@@ -1,0 +1,13 @@
+base_url = "https://samtee.uk"
+title = "Sam Larcombe Tee — Physics"
+description = "MSci Physics, Cambridge. Computational physics, Python, tutoring."
+
+[markdown]
+highlight_code = true
+
+[extra]
+name = "Sam Larcombe Tee"
+email = "sl2110@cam.ac.uk"
+git_url = "https://git.akhlus.uk"
+author = "Sam Larcombe Tee"
+variant = "Minimal Masthead"

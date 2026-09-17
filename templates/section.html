@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}{{ section.title }} — {{ config.extra.name }}{% endblock %}
+{% block content %}
+<p class="eyebrow">Projects</p>
+<h1 class="title">{{ section.title }}</h1>
+<p class="lede">{{ section.description }} Both codebases are drafts in progress.</p>
+<hr class="rule">
+{% for p in section.pages %}
+<section class="block">
+<h2><a class="worklink" href="{{ p.permalink }}">{{ p.title }} <span class="arr" aria-hidden="true">→</span></a></h2>
+<p><em>{{ p.description }}</em></p>
+</section>
+{% endfor %}
+<hr class="rule">
+<p><a href="{{ get_url(path='@/_index.md') }}">← Home</a> · <a href="{{ get_url(path='@/cv.md') }}">CV</a></p>
+{% endblock %}

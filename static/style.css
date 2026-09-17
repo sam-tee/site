@@ -1,7 +1,7 @@
 :root{--f-serif:Georgia,'Times New Roman',serif;--f-sans:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
 html,html[data-theme="dark"]{--bg:#101010;--border:#323232;--muted:#8a8a8a;--fg:#e7e7e7;--fg-bright:#ffffff;--warm1:#F89777;--warm2:#F8D353;--accent-ink:#F89777}
-html[data-theme="light"]{--bg:#f0f0f0;--border:#d4d4d4;--muted:#545454;--fg:#2b2b2b;--fg-bright:#101010;--warm1:#8D3213;--warm2:#8D3213;--accent-ink:#8D3213}
-@media (prefers-color-scheme: light){html:not([data-theme]){--bg:#f0f0f0;--border:#d4d4d4;--muted:#545454;--fg:#2b2b2b;--fg-bright:#101010;--warm1:#8D3213;--warm2:#8D3213;--accent-ink:#8D3213}}
+html[data-theme="light"]{--bg:#FDFCF7;--border:#DCD5C6;--muted:#4B4742;--fg:#201D1A;--fg-bright:#101010;--warm1:#8D3213;--warm2:#8D3213;--accent-ink:#8D3213;--hl:#F89777;--hl-deep:#8D3213}
+@media (prefers-color-scheme: light){html:not([data-theme]){--bg:#FDFCF7;--border:#DCD5C6;--muted:#4B4742;--fg:#201D1A;--fg-bright:#101010;--warm1:#8D3213;--warm2:#8D3213;--accent-ink:#8D3213;--hl:#F89777;--hl-deep:#8D3213}}
 *{box-sizing:border-box}html,body{overflow-x:clip}body{margin:0;min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;background:var(--bg);color:var(--fg);font-family:var(--f-serif);line-height:1.65;overflow-wrap:break-word}
 .wrap{max-width:60rem;margin:0 auto;padding:0 1.25rem;padding-left:max(1.25rem,env(safe-area-inset-left));padding-right:max(1.25rem,env(safe-area-inset-right))}
 header{background:var(--bg);position:sticky;top:0;z-index:10;border-bottom:1px solid transparent}
@@ -29,7 +29,7 @@ html[data-theme="light"] .icon-sun{display:none}
 nav a.cvlink{width:auto;height:2.1rem;border-radius:0;padding:0 .9rem;font-family:var(--f-sans);font-size:.82rem;font-weight:700;letter-spacing:.12em}
 main{flex:1 0 auto;padding:1.2rem 0 3rem}
 h1,h2,h3{font-family:var(--f-sans);color:var(--fg-bright);line-height:1.25}
-h1.title{font-size:2.2rem;margin:.3rem 0 .6rem;color:var(--accent-ink)}
+h1.title{font-size:2.2rem;margin:.3rem 0 .6rem;padding:.12em .5em;color:var(--accent-ink)}
 .lede{font-size:1.12rem;color:var(--fg)}
 .kicker{font-family:var(--f-sans);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700}
 .actions{display:flex;gap:.5rem;margin:1.1rem 0 0}
@@ -48,7 +48,7 @@ a{color:var(--accent-ink)}footer{margin-top:auto;padding:1.2rem 0 2rem;color:var
 .ft-small{font-size:.72rem}
 .notfound{display:flex;align-items:center;justify-content:center;text-align:center;min-height:55vh;padding:3rem 0}
 .notfound-kicker{font-family:var(--f-sans);font-size:clamp(1rem,2.5vw,1.4rem);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:0 0 .5rem}
-.notfound-code{font-family:var(--f-sans);font-size:clamp(4rem,15vw,9rem);line-height:1;letter-spacing:-.02em;color:var(--accent-ink);margin:0 0 1rem}
+.notfound-code{font-family:var(--f-sans);font-size:clamp(4rem,15vw,9rem);line-height:1;letter-spacing:-.02em;color:var(--accent-ink);margin:0 0 1rem;padding:.05em 0}
 .notfound .lede{font-size:clamp(1.2rem,3vw,1.6rem)}
 .error404 main{display:flex;flex-direction:column}
 .error404 main .wrap{flex:1;display:flex;flex-direction:column;width:100%;align-self:center}
@@ -95,7 +95,7 @@ section.block.divided{border-top:1px solid var(--border);padding-top:1.6rem}
 .toc a span{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.7rem;color:var(--muted)}
 .toc a:hover{color:var(--accent-ink)}
 @media(max-width:700px){.folio{grid-template-columns:1fr}.toc{position:static;display:flex;flex-wrap:wrap;gap:0 1.2rem;align-items:baseline}.toc .toc-h{flex-basis:100%}.toc a{border:0;padding:.3rem 0}}
-.dropcap::first-letter{font-size:3.3em;float:left;line-height:.85;padding-right:.12em;color:var(--accent-ink)}
+.dropcap::first-letter{font-size:3.3em;float:left;line-height:.85;padding:0 .1em;color:var(--accent-ink)}
 .pull{border-left:3px solid var(--accent-ink);margin:1.8rem 0;padding:.2rem 0 .2rem 1rem;font-style:italic;font-size:1.3rem;line-height:1.5;color:var(--fg-bright)}
 .notes{font-size:.85rem;color:var(--muted)}
 .notes li{margin:.25rem 0}
@@ -107,3 +107,19 @@ section.block.divided{border-top:1px solid var(--border);padding-top:1.6rem}
 .pagehead{border-top:3px solid var(--fg-bright);border-bottom:3px solid var(--fg-bright);padding:1.2rem 0;margin:0 0 2rem}
 .pagehead h1.title{margin:0 0 .5rem;text-align:center}
 .pagehead .lede{margin:0;text-align:center}
+/* Light theme: ink text on warm paper; orange marker (hover fill + title band).
+   Layout-affecting properties (padding/borders) live in the base rules above
+   so boxes are identical in both themes — only paint changes here. */
+html[data-theme="light"] main a,html[data-theme="light"] footer a{color:var(--fg-bright);background:none;text-decoration:underline;text-decoration-color:var(--hl-deep);text-decoration-thickness:.09em;text-underline-offset:.2em;text-decoration-skip-ink:none}
+html[data-theme="light"] main a:hover,html[data-theme="light"] footer a:hover{background:var(--hl);text-decoration-color:transparent}
+html[data-theme="light"] a.brand,html[data-theme="light"] nav a,html[data-theme="light"] .actions a,html[data-theme="light"] .toc a,html[data-theme="light"] .notfound-home,html[data-theme="light"] .cv-dl{background:none;text-decoration:none}
+html[data-theme="light"] a.skip{background:var(--fg-bright);color:var(--bg);text-decoration:none}
+html[data-theme="light"] h1.title{color:var(--fg-bright);background:var(--hl)}
+html[data-theme="light"] .dropcap::first-letter{color:var(--fg-bright);background:var(--hl)}
+html[data-theme="light"] .pull{border-left-color:var(--hl);color:var(--fg-bright)}
+html[data-theme="light"] .notfound-code{color:var(--fg-bright);background:var(--hl)}
+html[data-theme="light"] nav a:hover,html[data-theme="light"] .iconbtn:hover,html[data-theme="light"] .actions a:hover,html[data-theme="light"] .toc a:hover,html[data-theme="light"] .notfound-home:hover{border-color:var(--hl-deep);color:var(--fg-bright);background:var(--hl)}
+html[data-theme="light"] .brand:hover .mono{border-color:var(--hl-deep);color:var(--fg-bright);background:var(--hl)}
+html[data-theme="light"] .cv-dl:hover{background:var(--hl);color:var(--fg-bright);border-color:var(--hl-deep)}
+html[data-theme="light"] :focus-visible{outline-color:var(--hl-deep)}
+@media (prefers-color-scheme: light){html:not([data-theme]) main a,html:not([data-theme]) footer a{color:var(--fg-bright);text-decoration-color:var(--hl-deep);text-decoration-skip-ink:none}html:not([data-theme]) h1.title{color:var(--fg-bright);background:var(--hl)}html:not([data-theme]) .notfound-code{color:var(--fg-bright);background:var(--hl)}html:not([data-theme]) .dropcap::first-letter{color:var(--fg-bright);background:var(--hl)}html:not([data-theme]) .pull{border-left-color:var(--hl)}}

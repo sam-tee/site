@@ -8,7 +8,7 @@
 
   function syncMeta(t){
     var mc=document.querySelector('meta[name="theme-color"]');
-    if(mc)mc.setAttribute('content',t==='light'?'#f0f0f0':'#101010');
+    if(mc)mc.setAttribute('content',t==='light'?'#FDFCF7':'#101010');
   }
   syncMeta(theme);
 

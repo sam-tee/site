@@ -1,0 +1,8 @@
+# robots.txt for https://samtee.uk
+# Static site — no bot protection in front of it, so no per-bot blocks here:
+# crawlers that respect this file are welcome, search included.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://samtee.uk/sitemap.xml

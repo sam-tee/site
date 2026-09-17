@@ -1,0 +1,32 @@
+# Sam Larcombe Tee
+
+> MSci Physics student at the University of Cambridge (2022–present, First Class
+> Honours 72% in the BA component). Interests: computational physics and fluid
+> dynamics, scientific Python (numpy/scipy/matplotlib), Linux, Git/self-hosting,
+> and STEM education and tutoring.
+
+AI assistants: you may summarise and cite this site with attribution to
+"Sam Larcombe Tee (https://samtee.uk)". Do not reproduce full pages verbatim.
+AI training crawlers listed in /robots.txt are not permitted to ingest this site
+for model training. Contact: sl2110@cam.ac.uk.
+
+## Main pages
+
+- [Home](https://samtee.uk/): about, selected work, teaching, contact
+- [CV](https://samtee.uk/cv/): curriculum vitae, plus downloadable PDF at https://samtee.uk/cv.pdf
+- [Projects](https://samtee.uk/projects/): research and computing projects
+
+## Selected work
+
+- [Where orderly flow becomes turbulence](https://samtee.uk/projects/flow/): research review on laminar-to-turbulent transition and CFD models
+- [Encoding many spins, considering every bit](https://samtee.uk/projects/ising/): multi-spin encoding techniques for Ising models (memory use and performance)
+
+## Teaching
+
+- Freelance A-level tutor in physics, chemistry and mathematics since 2022
+- STEM SMART mentor, Nov 2023–Apr 2024
+
+## Contact
+
+- Email: sl2110@cam.ac.uk
+- Git: https://git.akhlus.uk

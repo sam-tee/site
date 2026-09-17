@@ -1,0 +1,10 @@
+/* TEAM */
+Name: Sam Larcombe Tee
+Site: https://samtee.uk
+Contact: sl2110@cam.ac.uk
+Git: https://git.akhlus.uk
+
+/* SITE */
+Standards: HTML, CSS
+Components: Zola static site generator
+Hosting: Cloudflare Pages

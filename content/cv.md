@@ -35,5 +35,5 @@ Full transcript available on request.
 
 ## Contact
 
-- Email: [sl2110@cam.ac.uk](mailto:sl2110@cam.ac.uk)
+- Email: [sam@samtee.uk](mailto:sam@samtee.uk)
 - Git: [git.akhlus.uk](https://git.akhlus.uk)

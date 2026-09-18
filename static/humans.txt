@@ -1,7 +1,7 @@
 /* TEAM */
 Name: Sam Larcombe Tee
 Site: https://samtee.uk
-Contact: sl2110@cam.ac.uk
+Contact: sam@samtee.uk
 Git: https://git.akhlus.uk
 
 /* SITE */

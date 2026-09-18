@@ -8,7 +8,7 @@
 AI assistants: you may summarise and cite this site with attribution to
 "Sam Larcombe Tee (https://samtee.uk)". Do not reproduce full pages verbatim.
 AI training crawlers listed in /robots.txt are not permitted to ingest this site
-for model training. Contact: sl2110@cam.ac.uk.
+for model training. Contact: sam@samtee.uk.
 
 ## Main pages
 
@@ -28,5 +28,5 @@ for model training. Contact: sl2110@cam.ac.uk.
 
 ## Contact
 
-- Email: sl2110@cam.ac.uk
+- Email: sam@samtee.uk
 - Git: https://git.akhlus.uk

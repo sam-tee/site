@@ -1,4 +1,4 @@
-Contact: mailto:sl2110@cam.ac.uk
+Contact: mailto:sam@samtee.uk
 Canonical: https://samtee.uk/.well-known/security.txt
 Preferred-Languages: en
 Expires: 2027-09-17T00:00:00.000Z
